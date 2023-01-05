@@ -1,4 +1,4 @@
-﻿//Digital Calculator (v1.2)
+//Digital Calculator (v1.2)
 #include <iostream>
 #include <cfloat>
 #include <cmath>
@@ -31,13 +31,13 @@ int add(int procces_no)
 
 int subs(int procces_no)
 {
-        float a, b;
-        cout << "\nEnter the first number: ";
-        cin >> a;
-        cout << "\nEnter the second number: ";
-        cin >> b;
-        cout << "\nConclusion: " << a - b << "\n";
-        return 0;
+    float a, b;
+    cout << "\nEnter the first number: ";
+    cin >> a;
+    cout << "\nEnter the second number: ";
+    cin >> b;
+    cout << "\nConclusion: " << a - b << "\n";
+    return 0;
 }
 
 int multi(int process_no)
@@ -213,37 +213,37 @@ int sec(int process_no)
 
 int log(int procces_no)
 {
-    float a,b;
+    float a, b;
     int x;
     cout << "1. Logarithm\n2. Logarithm (lnx)\n"
-    << "Hangi logaritma fonksiyonunu çözelim?\n";
+        << "Enter the number: ";
     cin >> x;
     if (x == 1)
     {
-    cout << "\nEnter the base: ";
-    cin >> a;
-    cout << "\nEnter the number: ";
-    cin >> b;
-    cout << "\nConclusion: " << log(b)/log(a) << "\n";
+        cout << "\nEnter the base: ";
+        cin >> a;
+        cout << "\nEnter the number: ";
+        cin >> b;
+        cout << "\nConclusion: " << log(b) / log(a) << "\n";
     }
     else if (x == 2)
     {
         float a, e = 2.718281828;
         cout << "\nEnter the number: ";
         cin >> a;
-        cout << "\nConclusion: " << log(a)/log(e) << "\n";    
+        cout << "\nConclusion: " << log(a) / log(e) << "\n";
     }
-    else 
-    cout << "\nPlease enter the numbers in the options. The program is shutting down..." << endl;
+    else
+        cout << "\nPlease enter the numbers in the options. The program is shutting down..." << endl;
     return 0;
 }
 
 int main()
 {
     int process_no;
-    cout << "WELCOME TO THE MY DIGITAL CALCULATOR!!!\n\n\n";
-    cout << "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n" 
-    << "5. Square\n6. Square Root\n7. Quadratic Equations\n8. Trigonometric Operationsn\n9. Logarithm\n10. Exit\n" << endl;
+    cout << "Welcome to the my Digital Calculator\n\n\n";
+    cout << "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n"
+        << "5. Square\n6. Square Root\n7. Quadratic Equations\n8. Trigonometric Operationsn\n9. Logarithm\n10. Exit\n" << endl;
     cout << "Let's choose one of the above operations and process it in the order of the two numbers you entered." << endl;
     cout << "Please enter the number of the transaction you want to select: ";
     cin >> process_no;
@@ -324,7 +324,7 @@ int main()
         else
             cout << "\nPlease enter the numbers in the options. The program is shutting down..." << endl;
     }
-    
+
     else if (process_no == 9)
     {
         cout << "\n"; log(process_no);
