@@ -1,4 +1,4 @@
-﻿//*Digital Calculator (v1.2)
+﻿//Digital Calculator (v1.2)
 #include <iostream>
 #include <cfloat>
 #include <cmath>
@@ -241,6 +241,7 @@ int log(int procces_no)
 int main()
 {
     int process_no;
+    cout << "WELCOME TO THE MY DIGITAL CALCULATOR!!!\n\n\n";
     cout << "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n" 
     << "5. Square\n6. Square Root\n7. Quadratic Equations\n8. Trigonometric Operationsn\n9. Logarithm\n10. Exit\n" << endl;
     cout << "Let's choose one of the above operations and process it in the order of the two numbers you entered." << endl;
