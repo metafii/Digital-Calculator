@@ -1,4 +1,4 @@
-//Digital Calculator (v1.2)
+//*Digital Calculator (v1.2)
 #include <iostream>
 #include <cfloat>
 #include <cmath>
